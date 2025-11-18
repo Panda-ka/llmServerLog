@@ -1,4 +1,4 @@
-# 大模型日志输出工具说明文档
+# 大模型日志输出工具说明
 
 ## 工具描述
 这是一个基于OpenAI接口的大模型的交互日志工具
@@ -36,6 +36,7 @@ llm_prompts_log_server.py
 
 ### OPENAI_URL的配置如下变量进行设定
 VLLM_BACKEND_URL = "http://192.168.1.1:8000/"
+本地模型和online支持模型均可支持
 
 ### 本LOG服务的端口号设定
 PROXY_PORT = 8000
@@ -47,4 +48,5 @@ LOG_FILE_PATH = f"./Log/openai_log_server_{current_time}.log"
 server_start.bat执行
 
 ## 所需依赖
+
 requirements.txt文件参照
